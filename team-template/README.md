@@ -18,7 +18,7 @@
 ## ✅ Checklist
 
 **ก่อนเริ่ม**
-- [ ] **Fork repo ทีม** (ทำก่อนเลย จะได้กรอกงานทั้งวัน) → [student/05-submit.md](../student/05-submit.md) ข้อ 1
+- [/] **Fork repo ทีม** (ทำก่อนเลย จะได้กรอกงานทั้งวัน) → [student/05-submit.md](../student/05-submit.md) ข้อ 1
 
 **เช้า — ทำให้ UNO Q อยู่มือ**
 - [ ] เช็กอุปกรณ์ที่ได้รับครบ → [morning/kit-checklist.md](morning/kit-checklist.md)
