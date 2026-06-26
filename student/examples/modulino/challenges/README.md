@@ -32,22 +32,22 @@
 > 📁 [challenge-b-movement-csv/](challenge-b-movement-csv/)
 > ใช้: Modulino **Movement**
 
-อ่าน x,y,z แล้วพิมพ์เป็น CSV ทาง Serial (~50 Hz) → ได้ข้อมูลจริงไป upload เข้า Edge Impulse ตอนบ่าย
+อ่าน x,y,z พิมพ์เป็น CSV `timestamp,accX,accY,accZ` (~100 Hz) → **upload เข้า Edge Impulse ได้ตรงๆ** (ดู [04-edge-impulse.md ข้อ 2B](../../../04-edge-impulse.md))
 
 **ลองทำ — เก็บทีละ "ท่า" (class):**
-1. รันสเก็ตช์ → เปิด Serial Monitor (baud 9600)
+1. รันสเก็ตช์ → เปิด Serial Monitor (baud **115200**)
 2. เลือกท่าที่จะเก็บ เช่น `circle` / `shake` / `still`
-3. ทำท่านั้นค้างไว้ ~10 วินาที → ก็อปข้อความ CSV ออกมา
-4. วางลงไฟล์ `circle.csv` (1 ท่า = 1 ไฟล์) เก็บไว้ใน repo ทีม
-5. ทำซ้ำกับท่าอื่นๆ ให้ครบทุก class
+3. ทำท่านั้นค้างไว้ ~10 วินาที → ก็อปข้อความ CSV ออกมา (รวมบรรทัด header)
+4. วางลงไฟล์ `circle.csv` (1 ท่า = 1 ไฟล์)
+5. ทำซ้ำให้ครบทุก class → Studio → Data acquisition → **Upload data**
 
 ```
-x,y,z
-0.02,0.98,0.10
-0.05,0.97,0.12
+timestamp,accX,accY,accZ
+0,0.02,0.98,0.10
+10,0.05,0.97,0.12
 ...
 ```
 
-> ✅ **ผ่านเมื่อ:** มีไฟล์ CSV อย่างน้อย 2 ท่า เก็บแยกไฟล์ชัดเจน
-> 💡 เก็บให้สม่ำเสมอ (อัตราคงที่ ท่าชัด) = data สะอาด → AI เรียนรู้ง่ายตอนบ่าย
+> ✅ **ผ่านเมื่อ:** มีไฟล์ CSV อย่างน้อย 2 ท่า upload เข้า Studio ได้
+> 💡 มีคอลัมน์ `timestamp` (ms) = EI upload ผ่านเลย ไม่ต้องตั้ง frequency เอง
 > ⚠️ อย่าเก็บจากคนเดียว/แบบเดียว — สลับคน/ความเร็ว กันโดน bias (ดูสไลด์บ่าย S15)

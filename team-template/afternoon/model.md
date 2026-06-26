@@ -20,8 +20,8 @@
 - Accuracy V2: ____  | ดีขึ้น/แย่ลงตรงไหน: _______________
 
 ## รันบนบอร์ด
-- [ ] deploy target = **Arduino UNO Q** → Build → import ใน App Lab → Run
-- [ ] ป้อน input จริงแล้ว prediction เปลี่ยนตาม
+- [ ] วิธีรัน: [ ] กล้อง/ไมค์ → `edge-impulse-linux-runner` (Web UI :4912)  [ ] Modulino → Arduino library ในสเก็ตช์
+- [ ] ป้อน input จริงแล้ว prediction เปลี่ยนตาม (inferencing time: ____ ms)
 - คลิป/รูปตอนรัน: ![run](../assets/run.jpg)
 
 ## (ต่อยอด) Output logic

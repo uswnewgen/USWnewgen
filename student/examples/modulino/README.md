@@ -91,3 +91,7 @@ void loop() {
 
 - **Challenge A** — Proximity Alarm: Sensor → Buzzer (input → logic → output)
 - **Challenge B** — เก็บ Movement เป็น CSV เตรียมไปเทรน Edge Impulse ตอนบ่าย
+
+## 🤖 ส่ง Movement เข้า Edge Impulse (ตอนบ่าย)
+
+- [collect-movement-ei/](collect-movement-ei/) — สเก็ตช์ print x,y,z สำหรับ `edge-impulse-data-forwarder` (ดูขั้นตอนเต็มใน [04-edge-impulse.md ข้อ 2B](../../04-edge-impulse.md))
